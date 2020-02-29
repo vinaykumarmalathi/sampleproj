@@ -1,0 +1,18 @@
+<button (click)="getProductDetails()">click here</button>
+
+
+
+
+
+<table *ngIf="products.length">
+  <thead>
+    <td>Product Name</td>
+    <td>Product Cost</td>
+  </thead>
+  <tr *ngFor="let product of products">
+    <td>{{product.productName}}</td>
+    <td>{{product.productCost}}</td>
+  </tr>
+
+
+</table>
