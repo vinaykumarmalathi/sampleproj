@@ -17,7 +17,7 @@ public class AppController {
 
 	@RequestMapping("/product-details")
 	public List<Products> getProductDetails() {
-		System.out.println("updated");
+		System.out.println("updated 123" );
 		ArrayList<Products> productDetails = (ArrayList<Products>) dao.getProductDetails();
 		return productDetails;
 	}
